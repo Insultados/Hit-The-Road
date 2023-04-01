@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>В ПУТЬ!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="autocomplete.css">
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <div class="header_container">
+                <div class="header_logo_container">
+                    <a class="header_logo " href="">В ПУТЬ!</a>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="main_container">
+                <div class="main_map_container">
+                    <div class="text_container" id="map_text_container">
+                        <p id="map_text">СХЕМА СВЯЗИ ГОРОДОВ РОССИИ</p>
+                        <h5 id="tip"></h5>
+                    </div>
+                    <div class="map_content_container">
+                        <svg viewbox="0 0 1600 650" id="svgmap">
+
+                        </svg>
+                    </div>
+                    <div class="city_selection_container">
+                        <div id="city_selection_A" class="city_selection">
+                            <div class="text_container" id="city_selection_text">
+                                <p>ПУНКТ А</p>
+                            </div>
+                            <input id="city_selection_input1" class="city_selection_input">
+                        </div>
+                        <div id="city_selection_B" class="city_selection">
+                            <div class="text_container" id="city_selection_text">
+                                <p>ПУНКТ B</p>
+                            </div>
+                            <input id="city_selection_input2" class="city_selection_input">
+                        </div>
+                    </div>
+                    <div class="list_of_cities_container">
+                        <div class="text_container" id="list_of_cities_container_text">
+                            <p>ОБЯЗАТЕЛЬНЫЕ ДЛЯ ПОСЕЩЕНИЯ ГОРОДА</p>
+                        </div>
+                        <div class="list_of_cities_content" id="list_of_cities_content1">
+                        </div>
+                        <div class="text_container" id="list_of_cities_container_text">
+                            <p>ИЗБЕГАЕМЫЕ ДЛЯ ПОСЕЩЕНИЯ ГОРОДА</p>
+                        </div>
+                        <div class="list_of_cities_content" id="list_of_cities_content2">
+                        </div>
+                    </div>
+                    <div id="list_of_cities_passed">
+
+                    </div>
+                    <div class="build_button_container">
+                        <div class="build_button_content">
+                            <button id="build_button1"class="build_button">
+                                ПОСТРОИТЬ МАРШРУТ
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer_container">
+
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
